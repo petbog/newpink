@@ -28,6 +28,15 @@
     margin-left: 77px;
   }
 }
+.header__nav-list{
+  transition: all .3s;
+}
+.header__nav-list:hover{
+  border-bottom:2px solid #FFFFFF;
+}
+.activ{
+  border-bottom:2px solid #FFFFFF;
+}
 .header__inner-title{
   max-width: 300px;
   margin-top: 155px;
@@ -51,6 +60,16 @@
      border: 3px solid #FFFFFF;
      border-radius: 29px;
      color: #FFFFFF;
+     transition: all .3s;
+   }
+   &-inner:hover{
+    color:#D22856ed;
+    background-color: #FFFFFF;
+   }
+   &-inner:active{
+    background-color: #FFFFFF;
+    color:rgba(210, 40, 86, 0.5);
+    transition: none;
    }
    margin-bottom: 77px;
 }
