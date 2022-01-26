@@ -1,3 +1,4 @@
+
 .loading__heading{
   margin-top: 95px;
   &-text{
@@ -6,9 +7,95 @@
     font-size: 26px;
     line-height: 30px;
     text-align: center;
+    padding-bottom: 25px;
   }
 }
 .loading__inner{
   display: flex;
-  justify-content: space-between;
+  background-color: #F2F2F2;
+  padding: 57px 80px;
+}
+
+.loading__settings-line{
+  min-width: 288px;
+  height: 1px;
+  background-color: #283645;
+  justify-content: center;
+}
+.loading__settings-line-toh{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #D22856;
+}
+.loading__inner-img{
+  display: inline-block;
+}
+.loading__settings{
+  display: inline-block;
+}
+.loading__settings-clipping-inner{
+  display: flex;
+  justify-content: space-around;
+  width: 406px;
+  height: 64px;
+  margin-left: 90px;
+}
+.loading__settings-clipping-inner:nth-child(1){
+  border-bottom: 1px solid #99a2ac;
+}
+.loading__settings-clipping-inner:nth-child(2){
+  border-bottom: 1px solid #99a2ac;
+  
+}
+.loading__settings-clipping-inner {
+  margin-bottom: 18px;
+}
+.loading__settings-line-box{
+  position: relative;
+}
+.loading__settings-line-toh{
+  background-color: #ffffff;
+}
+.position-toh1{
+  position: absolute;
+  top: -5px;
+  left: 235px;
+}
+.position-toh2{
+  position: absolute;
+  top:-6px ;
+  left: 40px;
+}
+.position-toh3{
+  position: absolute;
+  top: -5px;
+  left: 166px;
+}
+.loading__settings{
+  position: relative;
+}
+.btn-post{
+  position: absolute;
+  top:340px ;
+  left: 125px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:700;
+  color:#D22856;
+  border: 3px solid #D22856;
+  padding: 21px 42px;
+  border-radius: 30px;
+}
+.btn-cancel{
+  position: absolute;
+  top:340px ;
+  left: 360px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:700;
+  color:#6a737c;
+  border: 3px solid #6a737c;
+  padding: 21px 55px;
+  border-radius: 30px;
 }
