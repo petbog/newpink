@@ -1,0 +1,88 @@
+.form__info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__info-human{
+    display: flex;
+    max-width: 430px;
+    max-height: 280px;
+    flex-direction: column;
+}
+.form__box{
+  max-width: 430px;
+  max-height: 65px;
+  &-label{
+    color: #D22856;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+  }
+  &-input{
+    color: #283645;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px 100px 5px 20px;
+  }
+}
+.form__box:nth-child(1){
+  margin-bottom: 47px;
+}
+.form__box:nth-child(2){
+  margin-bottom: 47px;
+}
+.form__box:nth-child(2) .form__box-label{
+  padding-right:40px;
+}
+//form__info-application
+
+.form__info-application{
+  min-width: 430px;
+  max-height: 300px;
+  border: 2px solid #E5E5E5;
+  position: relative;
+  &-text{
+    color: #D22856;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    transform: translate(57px, -30px);
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 0 15px;
+  }
+}
+.application__box{
+  position: relative;
+  margin-bottom: 25px;
+  &-label{
+    color: #283645;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left:132px;
+    cursor: pointer;
+  }
+  &-input{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+  }
+  &-icon{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-image: url(../../img/radio.svg);
+    background-repeat: no-repeat;
+    top:-5;
+    left: 80px;
+    background-size: 100% 100%;
+  }
+}
+.application__box-input:checked + .application__box-icon{
+  background-image: url(../../img/radio-chek.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

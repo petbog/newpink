@@ -36,31 +36,49 @@
     <div class="container">
       <form action="" method="get">
         <div class="heading">
-          <p class="heading__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-            бонусную карту! Пожалуйста, заполните форму ниже:</p>
+          <p class="heading__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+            <br>вашу
+            бонусную карту! Пожалуйста, заполните форму ниже:
+          </p>
         </div>
         <div class="form__info">
           <div class="form__info-human">
-            <label for="family">ФАМИЛИЯ:</label>
-            <input type="text" name="family" id="family" placeholder="Укажите фамилию *" required>
-
-            <label for="name">ИМЯ:</label>
-            <input type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
-
-            <label for="patronymic">ОТЧЕСТВО:</label>
-            <input type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже:">
+            <div class="form__box">
+              <label class="form__box-label" for="family">ФАМИЛИЯ:</label>
+              <input class="form__box-input" type="text" name="family" id="family" placeholder="Укажите фамилию *"
+                required>
+            </div>
+            <div class="form__box">
+              <label class="form__box-label" for="name">ИМЯ:</label>
+              <input class="form__box-input" type="text" name="name" id="name" placeholder="Введите ваше имя *"
+                required>
+            </div>
+            <div class="form__box">
+              <label class="form__box-label" for="patronymic">ОТЧЕСТВО:</label>
+              <input class="form__box-input" type="text" name="patronymic" id="patronymic"
+                placeholder="Ну и отчество тоже:">
+            </div>
           </div>
           <div class="form__info-application">
             <p class="form__info-application-text">С каким приложением путешествовали?</p>
-            <label for="application-ios">
-              <input type="radio" name="application-ios" id="application-ios">Pink для iOS
-            </label>
-            <label for="application-android">
-              <input type="radio" name="application-android" id="application-android">Pink на Android
-            </label>
-            <label for="application-Windows">
-              <input type="radio" name="application-Windows" id="application-Windows">Windows Phone
-            </label>
+            <div class="application__box">
+              <label class="application__box-label" for="application-ios">
+                <input class="application__box-input" type="checkbox" name="application-ios" id="application-ios">Pink для iOS
+                <span class="application__box-icon"></span>
+              </label>
+            </div>
+            <div class="application__box">
+              <label class="application__box-label" for="application-android">
+                <input class="application__box-input" type="checkbox" name="application-android" id="application-android">Pink на Android
+                <span class="application__box-icon"></span>
+              </label>
+            </div>
+            <div class="application__box">
+              <label class="application__box-label" for="application-Windows">
+                <input class="application__box-input" type="checkbox" name="application-Windows" id="application-Windows">Windows Phone
+                <span class="application__box-icon"></span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="contact-info">
