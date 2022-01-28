@@ -1,0 +1,55 @@
+.contact-info{
+  border: 2px solid #ccc5c5;
+  border-radius: 4px;
+  margin-bottom: 60px;
+}
+
+.contact-info__slogan{
+  &-text{
+    color: #D22856;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    display: inline-block;
+    transform: translate(383px, -32px);
+    padding: 0 15px;
+    background-color: #ffffff;
+  }
+}
+.contact-info__input{
+  display: flex;
+  justify-content: space-around;
+}
+.contact-info__input-box{
+  min-width: 380px;
+  min-height: 110px;
+  margin-bottom: 23px;
+  &-input{
+    padding: 14px 180px 15px 20px;
+    color:#283645;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    border-radius: 1px;
+    border: 2px solid #E5E5E5;
+    margin-bottom: 22px;
+    cursor: pointer;
+  }
+  &-label{
+    color:#D22856;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+}
+.contact-info__input-box:nth-child(1) .contact-info__input-box-input{
+  background-image: url(../../img/icon-phone-imput.svg);
+  background-repeat: no-repeat;
+  background-position: 360px 0px;
+}
+.contact-info__input-box:nth-child(2) .contact-info__input-box-input{
+  background-image: url(../../img/email-icon-input.svg);
+  background-repeat: no-repeat;
+  background-position: 360px 0px;
+}

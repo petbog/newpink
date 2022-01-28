@@ -63,19 +63,22 @@
             <p class="form__info-application-text">С каким приложением путешествовали?</p>
             <div class="application__box">
               <label class="application__box-label" for="application-ios">
-                <input class="application__box-input" type="checkbox" name="application-ios" id="application-ios">Pink для iOS
+                <input class="application__box-input" type="checkbox" name="application-ios" id="application-ios">Pink
+                для iOS
                 <span class="application__box-icon"></span>
               </label>
             </div>
             <div class="application__box">
               <label class="application__box-label" for="application-android">
-                <input class="application__box-input" type="checkbox" name="application-android" id="application-android">Pink на Android
+                <input class="application__box-input" type="checkbox" name="application-android"
+                  id="application-android">Pink на Android
                 <span class="application__box-icon"></span>
               </label>
             </div>
             <div class="application__box">
               <label class="application__box-label" for="application-Windows">
-                <input class="application__box-input" type="checkbox" name="application-Windows" id="application-Windows">Windows Phone
+                <input class="application__box-input" type="checkbox" name="application-Windows"
+                  id="application-Windows">Windows Phone
                 <span class="application__box-icon"></span>
               </label>
             </div>
@@ -86,13 +89,14 @@
             <p class="contact-info__slogan-text">контактная информация</p>
           </div>
           <div class="contact-info__input">
-            <div class="contact-info__input-number">
-              <input type="tel" name="tel" id="tel" value="Номер, пожалуйста">
-              <label for="tel">НОМЕР ТЕЛЕФОНА</label>
+            <div class="contact-info__input-box">
+              <input class="contact-info__input-box-input" type="tel" name="tel" id="tel" value="Номер, пожалуйста">
+              <label class="contact-info__input-box-label" for="tel"><br>НОМЕР ТЕЛЕФОНА</label>
             </div>
-            <div class="contact-info__input-email">
-              <input type="email" name="email" id="email" value="Введите почту *" required>
-              <label for="email">АДРЕС ПОЧТЫ</label>
+            <div class="contact-info__input-box">
+              <input class="contact-info__input-box-input" type="email" name="email" id="email" value="Введите почту *"
+                required>
+              <label class="contact-info__input-box-label" for="email"><br>АДРЕС ПОЧТЫ</label>
             </div>
           </div>
         </div>
@@ -101,24 +105,42 @@
             <p class="achievements__slogan-text">Ваши безбашенные достижения в путешествии</p>
           </div>
           <div class="achievements__list">
-            <label for="shark">
-              <input type="radio" name="shark" id="shark">Сделал селфи с акулой
-            </label>
-            <label for="norris">
-              <input type="radio" name="norris" id="norris">Видел Чака Норриса
-            </label>
-            <label for="tower">
-              <input type="radio" name="tower" id="tower">Удержал башню
-            </label>
-            <label for="beach">
-              <input type="radio" name="beach" id="beach">Обгорел на пляже
-            </label>
-            <label for="souvenir">
-              <input type="radio" name="souvenir" id="souvenir">Накупил сувениров
-            </label>
-            <label for="hotel">
-              <input type="radio" name="hotel" id="hotel">Разгромил отель
-            </label>
+            <div class="achievements__list-box">
+              <label class="achievements__list-label" for="shark">
+                <input class="achievements__list-input" type="checkbox" name="shark" id="shark">Сделал селфи с акулой
+                <span class="achievements__list-span"></span>
+              </label>
+            </div>
+            <div class="achievements__list-box">
+              <label class="achievements__list-label" for="norris">
+                <input class="achievements__list-input" type="checkbox" name="norris" id="norris">Видел Чака Норриса
+                <span class="achievements__list-span"></span>
+              </label>
+            </div>
+            <div class="achievements__list-box">
+              <label class="achievements__list-label" for="tower">
+                <input class="achievements__list-input" type="checkbox" name="tower" id="tower" checked>Удержал башню
+                <span class="achievements__list-span"></span>
+              </label>
+            </div>
+            <div class="achievements__list-box">
+              <label class="achievements__list-label" for="beach">
+                <input class="achievements__list-input" type="checkbox" name="beach" id="beach">Обгорел на пляже
+                <span class="achievements__list-span"></span>
+              </label>
+            </div>
+            <div class="achievements__list-box">
+              <label class="achievements__list-label" for="souvenir">
+                <input class="achievements__list-input" type="checkbox" name="souvenir" id="souvenir" checked>Накупил сувениров
+                <span class="achievements__list-span"></span>
+              </label>
+            </div>
+            <div class="achievements__list-box">
+              <label class="achievements__list-label" for="hotel">
+                <input class="achievements__list-input" type="checkbox" name="hotel" id="hotel" checked>Разгромил отель
+                <span class="achievements__list-span"></span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="blog">
@@ -126,11 +148,11 @@
             <p class="blog__slogan-text">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
           </div>
           <div class="blog__description">
-            <textarea name="" id="" cols="60" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="blog__description-text" name="" id="" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
         </div>
         <div class="form-footer">
-          <input type="submit" value="Отправить форму">
+          <input class="form-footer__input" type="submit" value="Отправить форму">
           <p class="form-footer__text">* — обязательные для заполнения поля</p>
         </div>
       </form>
@@ -140,16 +162,28 @@
     <div class="container">
       <div class="info">
         <div class="info__logo">
-          <img class="info__logo-img" src="" alt="">
+          <img class="info__logo-img" src="img/footer-logo.svg" alt="header-logo">
         </div>
-        <div class="info__sozial">
-          <a href="" class="info__sozial-tviter"><img src="" alt=""></a>
-          <a href="" class="info__sozial-feesbyk"><img src="" alt=""></a>
-          <a href="" class="info__sozial-utub"><img src="" alt=""></a>
+        <div class="info-sozial">
+          <ul class="info-sozial__list" >
+            <li class="info-sozial__list-item">
+              <a href="#" class="social "><img class="info__sozial-contact-img" src="img/twitter.svg"
+                  alt="twitter"></a>
+            </li>
+            <li class="info-sozial__list-item">
+              <a href="#" class="social "><img class="info__sozial-contact-img" src="img/facebook.svg"
+                  alt="facebook"></a>
+            </li>
+            <li class="info-sozial__list-item">
+              <a href="#" class="social "><img class="info__sozial-contact-img" src="img/youtube.svg"
+                  alt="youtube"></a>
+            </li>
+          </ul>
         </div>
+
         <div class="developed">
           <p class="developed__text">Разработано</p>
-          <img class="developed__logo" src="" alt="">
+          <img class="developed__logo" src="img/html academy.svg" alt="htmlacademy">
         </div>
       </div>
     </div>

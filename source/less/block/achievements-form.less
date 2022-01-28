@@ -1,0 +1,53 @@
+.achievements{
+  border: 2px solid #ccc5c5;
+  border-radius: 4px;
+  margin-bottom: 65px;
+}
+.achievements__slogan{
+  &-text{
+    color: #D22856;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    display: inline-block;
+    transform: translate(315px, -32px);
+    padding: 0 15px;
+    background-color: #ffffff;
+  }
+}
+.achievements__list{
+  display: flex;
+  flex-wrap: wrap  ;
+  justify-content: space-between;
+  &-box{
+    min-width: 270px;
+    min-height: 50px;
+    position: relative;
+    margin: 0 0 17px 45px;
+  }
+}
+.achievements__list-label{
+padding-left: 40px;
+}
+.achievements__list-input{
+  -webkit-appearance: none;
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.achievements__list-span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../img/checkbox-off.svg);
+  background-size: 100% 100%;
+}
+.achievements__list-input:checked + .achievements__list-span{
+  background-image: url(../../img/chekbox-on.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
