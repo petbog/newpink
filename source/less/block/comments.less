@@ -1,14 +1,13 @@
-.comments__text-inner{
+.comments-text{
   font-weight: 400px;
   line-height: 30px;
   font-size: 18px;
   color: #283645;
   text-align: center;
   max-width: 690px;
-  margin: 255px auto 0;
+  margin: 0 auto 0;
 }
-.comments__data{
-  &-human{
+.comments-human{
     color:#000000;
     font-weight: 700;
     font-size: 24px;
@@ -16,12 +15,49 @@
     text-align: center;
     margin-top: 50px;
   }
-  &-info{
+.comments-info{
     color:#283645;
     font-weight: 400;
     line-height: 30px;
     font-size: 18px;
     text-align: center;
     margin-top: -24px;
-  }
+}
+.comments-img{
+  padding: 70px 0 60px 0;
+  margin-left: 432px;
+}
+
+
+// slider 
+.comments{
+  position: relative;
+}
+
+//  сам трек 
+.slick-track{
+  display: flex;
+}
+// ограничевающая оболочка для видимости
+.slick-list {
+  overflow: hidden;
+}
+// стрелка вперед
+.comments .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  border: none;
+  width: 22px;
+  height: 41px;
+  margin: 20px 0 0 0;
+}
+.comments .slick-arrow.slick-prev{
+  left: 0;
+  background: url(../../img/left\ arrow.svg) 0 0 / 100% no-repeat;
+}
+.comments .slick-arrow.slick-next{
+  right: 0;
+  background: url(../../img/right\ arrow.svg) 0 0 / 100% no-repeat;
 }

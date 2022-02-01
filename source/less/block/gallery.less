@@ -2,36 +2,39 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 80px;
 }
 .gallery__card{
   max-width: 300px;
   margin-bottom: 20px;
-  min-height:535px;
-  display: inline-block;
-  background-color: #d8d2d2;
+  min-height:560px;
+  background-color: #f5efef;
   &-name{
     color:#283645;
     font-size:14px;
     font-weight: 700;
     line-height: 24px;
+    padding-left: 27px;
   }
   &-text{
     color: #283645;
     font-size:14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
+    padding-left: 27px;
+    max-width: 265px;
+    min-height: 50px;
   }
   &-like{
     color: #D22856;
     font-size:14px;
     font-weight: 600;
     line-height: 24px;
+    padding-left: 27px;
   }
 }
 .gallery__card-like::after{
   content: url('../../img/heart.svg');
-  margin-left: 176px;
+  margin-left: 140px;
 }
 .gallery__card:nth-child(1){
   margin-right: 20px;
@@ -44,4 +47,52 @@
 }
 .gallery__card:nth-child(5){
   margin-right: 20px;
+}
+.gallery__card:nth-child(1) .gallery__card-name::after{
+  content: "(5 часов назад)";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color:#4e5b69;
+  margin-left: 4px;
+}
+.gallery__card:nth-child(2) .gallery__card-name::after{
+  content: "(12 часов назад)";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color:#4e5b69;
+  margin-left: 4px;
+}
+.gallery__card:nth-child(3) .gallery__card-name::after{
+  content: "(20 часов назад)";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color:#4e5b69;
+  margin-left: 4px;
+}
+.gallery__card:nth-child(4) .gallery__card-name::after{
+  content: "(25 часов назад)";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color:#4e5b69;
+  margin-left: 4px;
+}
+.gallery__card:nth-child(5) .gallery__card-name::after{
+  content: "(40 часов назад)";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color:#4e5b69;
+  margin-left: 4px;
+}
+.gallery__card:nth-child(6) .gallery__card-name::after{
+  content: "(45 часов назад)";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color:#4e5b69;
+  margin-left: 4px;
 }
