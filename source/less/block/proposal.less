@@ -48,23 +48,51 @@
 .proposal__title-text-br{
   display: none;
 }
+.contein-img{
+  display: none;
+}
 // адаптив 
 @media(max-width:850px){
-  .proposal__card-conteiner:nth-child(1) .proposal__card-img{
+  .proposal__card-conteiner:nth-child(2) .proposal__card-img{
     display: none;
   }
-  .proposal__card-conteiner:nth-child(2) .proposal__card-img{
+  .proposal__card-conteiner:nth-child(3) .proposal__card-img{
+    display: none;
+  } .proposal__card-conteiner:nth-child(4) .proposal__card-img{
     display: none;
   }
   .proposal__card{
     flex: none;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    &-conteiner{
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr ;
+    grid-row-start:1 ;
+    grid-row-end:6; 
+    grid-template-areas: 
+    "contein-img contein-1"
+    "contein-img contein-1"
+    "contein-img contein-2"
+    "contein-img contein-2"
+    "contein-img contein-3"
+    "contein-img contein-3";
+    .contein-1{
+      grid-area: contein-1;
+    }
+    .contein-2{
+      grid-area: contein-2;
+    }
+    .contein-3{
+      grid-area: contein-3;
+    }
+    .contein-img{
+      grid-area: contein-img;
+    }
+    .contein-img{
       display: grid;
+      background-image: url(../../img/tel-adaptiv-850px.png);
+      background-repeat: no-repeat;
     }
   }
-
 }
 @media(max-width:840px){
   .proposal__title-text {
