@@ -64,17 +64,17 @@
   .proposal__card{
     flex: none;
     display: grid;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 53px 104px 153px;
     grid-template-columns: 1fr 1fr ;
     grid-row-start:1 ;
     grid-row-end:6; 
     grid-template-areas: 
-    "contein-img contein-1"
-    "contein-img contein-1"
-    "contein-img contein-2"
-    "contein-img contein-2"
-    "contein-img contein-3"
-    "contein-img contein-3";
+      "contein-img contein-1"
+      "contein-img contein-1"
+      "contein-img contein-2"
+      "contein-img contein-2"
+      "contein-img contein-3"
+      "contein-img contein-3";
     .contein-1{
       grid-area: contein-1;
     }
@@ -91,6 +91,20 @@
       display: grid;
       background-image: url(../../img/tel-adaptiv-850px.png);
       background-repeat: no-repeat;
+      background-size: 305px 649px;
+    }
+    .proposal__card-title {
+      line-height: 24px;
+      font-size: 18px;
+      text-align: left;
+    }
+    .proposal__card-text {
+      text-align: left;
+      line-height: 24px;
+      font-size: 14px;
+    }
+    .proposal__card-title-br{
+      display: none;
     }
   }
 }
@@ -99,6 +113,37 @@
     font-size: 40px;
     line-height: 54px;
   }
+}
+@media(max-width:650px){
+  .proposal {
+    background-position: center;
+    background-size: 349% 100%;
+}
+  .proposal__card{
+    flex: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 650px ;
+    grid-template-columns:260px ;
+    grid-row-start:1 ;
+    grid-row-end:6; 
+    grid-template-areas: 
+      " contein-1"
+      "contein-2"
+      "contein-3"
+      "contein-img";
+      grid-row-gap:10px;
+      justify-content: center;
+  }
+  .proposal__card .contein-img{
+    margin: 8px 0 0 34px;
+    background-size: 157px 340px;
+  }
+  .proposal__card-conteiner {
+    margin-right:0;
+}
+.proposal__card .proposal__card-text {
+  max-width: 260px;
+}
 }
 @media(max-width:370px){
   .proposal__title{
