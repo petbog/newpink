@@ -4,6 +4,16 @@ $(document).ready(function(){
     dots:false,
     slidesToScroll:1,
     autoplay:true,
+    responsive:[
+      {
+        breakpoint: 780,
+        settings: {
+          arrows:false,
+          dots:true,
+          autoplay:false,
+        }
+      }
+    ]
   });
 //кнопка
   $('.header__nav-btn').on('click',function(){
