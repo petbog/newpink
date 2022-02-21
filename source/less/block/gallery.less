@@ -36,18 +36,18 @@
   content: url('../../img/heart.svg');
   margin-left: 140px;
 }
-.gallery__card:nth-child(1){
-  margin-right: 20px;
-}
-.gallery__card:nth-child(2){
-  margin-right: 20px;
-}
-.gallery__card:nth-child(4){
-  margin-right: 20px;
-}
-.gallery__card:nth-child(5){
-  margin-right: 20px;
-}
+// .gallery__card:nth-child(1){
+//   margin-right: 20px;
+// }
+// .gallery__card:nth-child(2){
+//   margin-right: 20px;
+// }
+// .gallery__card:nth-child(4){
+//   margin-right: 20px;
+// }
+// .gallery__card:nth-child(5){
+//   margin-right: 20px;
+// }
 .gallery__card:nth-child(1) .gallery__card-name::after{
   content: "(5 часов назад)";
   font-weight: 300;
@@ -95,4 +95,30 @@
   line-height: 24px;
   color:#4e5b69;
   margin-left: 4px;
+}
+@media(max-width:900px){
+  .gallery {
+    justify-content: space-around;
+ }
+ .gallery__card {
+  margin-right: 10px;
+ }
+}
+@media(max-width:680px){
+  .gallery {
+    justify-content: center;
+ }
+ .gallery__card-like::after{
+  content: none;
+  margin-left: 140px;
+ }
+ .gallery__card-like::before{
+  content: url('../../img/heart.svg');
+  margin: 0 20px 0 0 ;
+ }
+}
+@media(max-width:400px){
+  .gallery__card {
+    margin-right: 0px;
+   }
 }

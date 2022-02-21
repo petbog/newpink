@@ -36,3 +36,116 @@
 .table__content-text-background{
   background-color:#FFFFFF;
 }
+// таблица для адаптива
+.table-box{
+  position: relative;
+}
+
+.table-adaptiv{
+  display: none;
+}
+.table-box_content{
+  min-height: 322px;
+  min-width: 276px;
+}
+.header-table{
+  max-width:276px;
+  height: 94px;
+  background-color: #283645;
+  position: relative;
+  &_text{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .header-table_img{
+    position: absolute;
+  }
+}
+.table-row1{
+  color: #283645;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  max-width:276px;
+  height: 76px;
+  border: 2px solid #E5E5E5;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .table-row1_text{
+    margin: 0 0 0 20px;
+  }
+  .table-row1_img{
+    margin: 0 17px 0 0;
+  }
+}
+@media(max-width:790px){
+   .table__content-top-hit {
+    background-position: -11px -9px;
+ }
+  .table_inner {
+    margin-top: 100px;
+ }
+    .table__content-top p {
+    font-size: 18px;
+    margin: 16px 0 0 0;
+}
+  .table__content-text{
+    font-size: 14px;
+  }
+  .table_inner tr td {
+    width: 159px;
+    height: 58px;
+ }
+}
+@media(max-width:559px){
+  .table_inner{
+    display: none;
+  }
+  .table-adaptiv{
+    display: block;
+    margin-top: 80px;
+  }
+  .table-box{
+    position: relative;
+    min-height: 400px;
+  }
+  .table-box .slick-track{
+    display: flex;
+  }
+  .table-box .slick-list {
+    overflow: hidden;
+  }
+  .table-box .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-4%);
+ }
+ .table-box .slick-dots li{
+   list-style: none;
+   margin: 0 5px;
+ }
+ .table-box .slick-dots button{
+   font-size: 0;
+   background-color: #778594;
+   border: none;
+   border-radius: 50%;
+   width: 13px;
+   height: 13px;
+   padding: 0;
+ }
+ .table-box .slick-dots li.slick-active button{
+   background-color: #fff;
+   border: 3px solid #283645;
+ }
+ .table {
+  background-size: 165% 107%;
+ }
+}

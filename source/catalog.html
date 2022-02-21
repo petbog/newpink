@@ -17,8 +17,12 @@
           <img class="header__img-logo" src="img/header-logo.svg" alt="header-logo" width="147px" height="40px">
         </div>
         <div class="header__nav">
-          <ul>
-            <li class="header__nav-list"><a href="index.html">Главная</a></li>
+          <button class="header__nav-btn">
+            <span></span>
+          </button>
+          <ul class="list">
+            <li class="header__nav-list disabel"></li>
+            <li class="header__nav-list "><a href="index.html">Главная</a></li>
             <li class="header__nav-list activ"><a href="#">Фотографии</a></li>
             <li class="header__nav-list"><a href="form.html">Конкурс</a></li>
             <li class="header__nav-list"><a href="#">HTML Academy</a></li>
@@ -66,37 +70,37 @@
     <div class="container">
       <div class="gallery">
         <div class="gallery__card">
-          <img class="gallery__card-img" src="img/gallery-1.png" alt="gallery-1" width="300px" height="400px">
+          <img class="gallery__card-img" src="img/gallery-1.png" alt="gallery-1" >
           <p class="gallery__card-name">Левон</p>
           <p class="gallery__card-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <p class="gallery__card-like">Нравится: 356</p>
         </div>
         <div class="gallery__card">
-          <img class="gallery__card-img" src="img/gallery-2.png" alt="gallery-2" width="300px" height="400px">
+          <img class="gallery__card-img" src="img/gallery-2.png" alt="gallery-2" >
           <p class="gallery__card-name">Антон</p>
           <p class="gallery__card-text">Соседи будут рады!</p>
           <p class="gallery__card-like">Нравится: 666</p>
         </div>
         <div class="gallery__card">
-          <img class="gallery__card-img" src="img/gallery-3.png" alt="gallery-3" width="300px" height="400px">
+          <img class="gallery__card-img" src="img/gallery-3.png" alt="gallery-3" >
           <p class="gallery__card-name">Борис</p>
           <p class="gallery__card-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <p class="gallery__card-like">Нравится: 215</p>
         </div>
         <div class="gallery__card">
-          <img class="gallery__card-img" src="img/gallery-4.png" alt="gallery-4" width="300px" height="400px">
+          <img class="gallery__card-img" src="img/gallery-4.png" alt="gallery-4" >
           <p class="gallery__card-name">Сергей</p>
           <p class="gallery__card-text">Самая кубанская в мире!</p>
           <p class="gallery__card-like">Нравится: 4</p>
         </div>
         <div class="gallery__card">
-          <img class="gallery__card-img" src="img/gallery-5.png" alt="gallery-5" width="300px" height="400px">
+          <img class="gallery__card-img" src="img/gallery-5.png" alt="gallery-5" >
           <p class="gallery__card-name">Максим</p>
           <p class="gallery__card-text">Где снег-то?</p>
           <p class="gallery__card-like">Нравится: 150</p>
         </div>
         <div class="gallery__card">
-          <img class="gallery__card-img" src="img/gallery-6.png" alt="gallery-6" width="300px" height="400px">
+          <img class="gallery__card-img" src="img/gallery-6.png" alt="gallery-6" >
           <p class="gallery__card-name">Надежда</p>
           <p class="gallery__card-text">Всем GM и взаимные лайки!</p>
           <p class="gallery__card-like">Нравится: 2560</p>
@@ -118,14 +122,14 @@
                 <div class="loading__settings-img">
                   <img src="img/crop.svg" alt="crop" width="44px" height="44px">
                 </div>
-                <div class="loading__settings-line-box">
+                <div class="loading__settings-line-box loading-none">
                   <p class="loading__settings-line"></p>
                   <p class="loading__settings-line-toh position-toh1"></p>
                 </div>
               </div>
               <div class="loading__settings-clipping-inner">
                 <div class="loading__settings-img">
-                  <img src="img/fill.svg" alt="crop" width="48px" height="43px">
+                  <img src="img/fill.svg " alt="crop" width="48px" height="43px">
                 </div>
                 <div class="loading__settings-line-box">
                   <p class="loading__settings-line"></p>
@@ -136,7 +140,7 @@
                 <div class="loading__settings-img">
                   <img src="img/contrast.svg" alt="crop" width="32px" height="32px">
                 </div>
-                <div class="loading__settings-line-box">
+                <div class="loading__settings-line-box loading-none">
                   <p class="loading__settings-line"></p>
                   <p class="loading__settings-line-toh position-toh3"></p>
                 </div>
@@ -178,6 +182,12 @@
       </div>
     </div>
   </footer>
+  <!-- подключение jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- подключение slick слайдера -->
+  <script src="js/slick.min.js"></script>
+  <!-- подключение скриптов -->
+  <script src="js/script.js"></script>
 
 </body>
 

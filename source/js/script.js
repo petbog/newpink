@@ -14,7 +14,8 @@ $(document).ready(function(){
         }
       }
     ]
-  });
+  }
+  );
 //кнопка
   $('.header__nav-btn').on('click',function(){
     $('.list,.header__nav-btn').toggleClass('list--activ');
@@ -33,4 +34,14 @@ $(document).ready(function(){
   $('.header__nav-btn').on('click',function(){
     $('.header').toggleClass('header__bottom-img-big');
   });
+  $('.table-box').slick({
+    arrows:false,
+    dots:true,
+    slidesToScroll:1,
+    autoplay:false,
+    centerMode: true,
+    variableWidth: true,
+    focusOnSelect: true,
+    infinite: false,
+  })
 });

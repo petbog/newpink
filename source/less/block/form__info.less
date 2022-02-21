@@ -89,3 +89,73 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+.br-adaptiv{
+  display: none;
+}
+@media(max-width:880px){
+  .contact-info__input {
+    flex-wrap: wrap;
+ } 
+ .contact-info__slogan-text {
+  color: #D22856;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  display: inline-block;
+  transform: none;
+  padding: 0 15px;
+  background-color: #ffffff;
+}
+ .contact-info__slogan{
+  // display: flex;
+  // justify-content: center;
+ }
+
+}
+@media(max-width:873px){
+  .form__info {
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .form__info-human {
+  margin-bottom: 77px;
+ }
+}
+
+@media(max-width:450px){
+  .heading__text {
+    font-size: 14px;
+ } 
+ .form__info-application {
+  min-width: 300px;
+  max-height: 300px;
+  border: none;
+  position: relative;
+   border-radius: none;
+  left: -12%;
+ }
+ .form__box-input {
+  padding: 5px 64px 5px 20px;
+ }
+}
+@media(max-width:350px){ 
+  .form__info-application {
+    width: 330px;
+    left: 0%;
+    background-color: #F2F2F2;
+    padding: 27px 0px 29px 0px;
+ }
+ .br-adaptiv{
+  display:block;
+ }
+ .form__info-application-text {
+  transform: translate(61px, -15px);
+  text-align: center;
+  background-color: inherit;
+ }
+ .application__box {
+  position: relative;
+  margin-bottom: 25px;
+  left: -30px;
+ }
+}

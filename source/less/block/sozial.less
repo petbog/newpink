@@ -1,5 +1,5 @@
 .sozial__title{
-  margin-top: 194px;
+  margin-top: 80px;
   &-inner{
     color: #283645;
     font-weight: 300;
@@ -11,6 +11,7 @@
 .sozial__card{
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 .sozial__contact{
   &-text{
@@ -56,4 +57,22 @@
     font-weight: 300;
     line-height: 37px;
   }
+}
+@media(max-width:700px){
+  .sozial__title-inner {
+    font-size: 40px;
+    line-height: 54px;
+  }
+ .sozial__card{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+ }
+}
+@media(max-width:410px){
+  .sozial__title-inner {
+    font-size: 24px;
+    line-height: 30px;
+ } 
 }

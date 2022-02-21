@@ -1,9 +1,24 @@
 .card{
-  background-image: url('../../img/card.png');
+  background-image: url(../../img/card.png);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 100% 100%;
-  min-width:1200px;
-  min-height:502px;
-  margin-top:5px;
+  background-size: cover;
+  max-width: 100%;
+  min-width: 261px;
+  max-height: 502px;
+  min-height: 450px;
+  margin-top: 5px;
+}
+@media(max-width:400px){
+  .card {
+    background-image: url(../../img/card.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    max-width: 100%;
+    min-width: 261px;
+    max-height: 502px;
+    min-height: 200px;
+    margin-top: 5px;
+}
 }

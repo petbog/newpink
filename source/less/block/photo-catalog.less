@@ -14,11 +14,29 @@
   line-height: 24px;
   padding: 14px 20px;
   position: absolute;
-  right:260px;
-  top:60px;
+  right:5%;
+  top:8%;
   border-radius: 3px;
 }
 .photo__panorama-day:hover{
   background-color: #b60736;
   transition: all .3s;
+}
+@media(max-width:660px){
+  .photo{
+    min-height:41vh;
+  }
+  .photo__panorama-day{
+    padding: 7px 14px;
+  }
+}
+@media(max-width:400px){
+  .photo{
+    min-height:17vh;
+  }
+  .photo__panorama-day{
+    padding: 3px 8px;
+    right:6%;
+    top:0%;
+  }
 }

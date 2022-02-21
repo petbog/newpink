@@ -17,8 +17,12 @@
           <img class="header__img-logo" src="img/header-logo.svg" alt="header-logo" width="147px" height="40px">
         </div>
         <div class="header__nav">
-          <ul>
-            <li class="header__nav-list"><a href="index.html">Главная</a></li>
+          <button class="header__nav-btn">
+            <span></span>
+          </button>
+          <ul class="list">
+            <li class="header__nav-list disabel"></li>
+            <li class="header__nav-list "><a href="index.html">Главная</a></li>
             <li class="header__nav-list"><a href="catalog.html">Фотографии</a></li>
             <li class="header__nav-list activ"><a href="#">Конкурс</a></li>
             <li class="header__nav-list"><a href="#">HTML Academy</a></li>
@@ -60,7 +64,7 @@
             </div>
           </div>
           <div class="form__info-application">
-            <p class="form__info-application-text">С каким приложением путешествовали?</p>
+            <p class="form__info-application-text">С каким приложением <br class="br-adaptiv"> путешествовали?</p>
             <div class="application__box">
               <label class="application__box-label" for="application-ios">
                 <input class="application__box-input" type="checkbox" name="application-ios" id="application-ios">Pink
@@ -100,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="achievements">
+        <!-- <div class="achievements">
           <div class="achievements__slogan">
             <p class="achievements__slogan-text">Ваши безбашенные достижения в путешествии</p>
           </div>
@@ -156,9 +160,9 @@
           <p class="form-footer__text"><span class="form-footer__text-mark" >*</span> — обязательные для заполнения поля</p>
         </div>
       </form>
-    </div>
+    </div> -->
   </main>
-  <footer>
+  <!-- <footer>
     <div class="container">
       <div class="info">
         <div class="info__logo">
@@ -187,7 +191,14 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
+    <!-- подключение jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- подключение slick слайдера -->
+    <script src="js/slick.min.js"></script>
+    <!-- подключение скриптов -->
+    <script src="js/script.js"></script>
+  
 </body>
 
 </html>
