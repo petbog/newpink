@@ -23,7 +23,7 @@
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  min-width: 816px;
+  width: 93%;
   min-height: 124px;
   padding-top: 15px;
   padding-left: 20px;
@@ -61,4 +61,56 @@
 .form-footer__input:hover{
   background-color: #16854d ;
   transition: all 0.5s;
+}
+.form-footer__text-659{
+  display: none;
+}
+@media(max-width:900px){
+  .blog__slogan{
+    display: flex;
+    justify-content: center;
+    &-text{
+    transform: none;
+   }
+  }
+}
+@media(max-width:659px){
+ .blog__description-text{
+   width: 88%;
+   font-size: 14px;
+ }
+ .form-footer__input {
+  padding: 0px 65px;
+ } 
+  .form-footer__text-661{
+   display: none;
+ }
+ .form-footer__text-659{
+   display: block;
+ }
+}
+@media(max-width:589px){
+  .form-footer {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ .form-footer__input {
+  padding: 13px 51px;
+ } 
+}
+@media(max-width:450px){
+  .blog{
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .blog__description {
+    margin-left: 29px;
+ }
+ .blog__description-text{
+   line-height: 17px;
+ }
+ .form-footer__text{
+   padding:10px 0 0 0;
+ }
 }
